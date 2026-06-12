@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50 Screens — A Documentary Film</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            theater: {
+              950: '#0a0a0a',
+              900: '#111111',
+              850: '#161616',
+              800: '#1a1a1a',
+              700: '#222222',
+              600: '#2a2a2a',
+              500: '#333333',
+              400: '#444444',
+              300: '#666666',
+            },
+            cream: {
+              50: '#F5F0E8',
+              100: '#EDE6D8',
+              200: '#DED4C0',
+              300: '#C8BA9E',
+              400: '#A89A78',
+              500: '#8A7D60',
+            },
+            amber: {
+              400: '#D4B06A',
+              500: '#C9A55A',
+              600: '#B8943F',
+              700: '#9A7A30',
+            },
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            mono: ['Courier Prime', 'Courier New', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0a0a0a; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #C9A55A; }
+
+    body {
+      background: #0a0a0a;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Film grain — very subtle */
+    @keyframes grain {
+      0%, 100% { transform: translate(0, 0); }
+      10% { transform: translate(-5%, -10%); }
+      20% { transform: translate(-15%, 5%); }
+      30% { transform: translate(7%, -25%); }
+      40% { transform: translate(-5%, 25%); }
+      50% { transform: translate(-15%, 10%); }
+      60% { transform: translate(15%, 0%); }
+      70% { transform: translate(0%, 15%); }
+      80% { transform: translate(3%, 35%); }
+      90% { transform: translate(-10%, 10%); }
+    }
+
+    .film-grain::after {
+      content: '';
+      position: absolute;
+      top: -50%; left: -50%; right: -50%; bottom: -50%;
+      width: 200%; height: 200%;
+      background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+      z-index: 2;
+      animation: grain 0.5s steps(6) infinite;
+      opacity: 0.3;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.12s; }
+    .reveal-delay-2 { transition-delay: 0.24s; }
+    .reveal-delay-3 { transition-delay: 0.36s; }
+
+    /* Accent button */
+    .btn-accent {
+      background: #C9A55A;
+      color: #0a0a0a;
+      font-family: 'Courier Prime', monospace;
+      font-weight: 700;
+      transition: all 0.25s ease;
+    }
+    .btn-accent:hover {
+      background: #D4B06A;
+      box-shadow: 0 0 40px rgba(201, 165, 90, 0.15);
+    }
+
+    /* Video embed container */
+    .video-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #111;
+    }
+    .video-embed iframe,
+    .video-embed .video-placeholder {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+    }
+
+    /* State grid button */
+    .state-btn {
+      transition: all 0.2s ease;
+    }
+    .state-btn:hover {
+      background: rgba(201, 165, 90, 0.1);
+      border-color: rgba(201, 165, 90, 0.3);
+      color: #C9A55A;
+    }
+    .state-btn.active {
+      background: rgba(201, 165, 90, 0.15);
+      border-color: rgba(201, 165, 90, 0.4);
+      color: #C9A55A;
+    }
+
+    /* Journal card */
+    .journal-card {
+      border-left: 3px solid transparent;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+    .journal-card:hover {
+      border-left-color: rgba(201, 165, 90, 0.7);
+      background: rgba(201, 165, 90, 0.03);
+    }
+
+    /* Thin divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(201, 165, 90, 0.25), transparent);
+    }
+
+    /* Progress bar */
+    #progress-bar {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      background: #C9A55A;
+      z-index: 9999;
+      transition: width 0.1s linear;
+    }
+
+    /* Nav */
+    .nav-scrolled {
+      background: rgba(10, 10, 10, 0.9) !important;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201, 165, 90, 0.08);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.35s ease;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+
+    /* Team member hover */
+    .team-member {
+      transition: background 0.3s ease;
+    }
+    .team-member:hover {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Ticker marquee */
+    .ticker-strip {
+      overflow: hidden;
+    }
+    .ticker-content {
+      display: inline-flex;
+      white-space: nowrap;
+      animation: ticker 45s linear infinite;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Scanlines — hero only */
+    .scanlines {
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.03) 2px,
+        rgba(0, 0, 0, 0.03) 4px
+      );
+    }
+
+    /* Hero vignette */
+    .hero-vignette {
+      background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.45) 100%);
+    }
+
+    /* Marquee title */
+    .marquee-title {
+      text-shadow: 0 0 80px rgba(201, 165, 90, 0.12), 0 0 160px rgba(201, 165, 90, 0.04);
+    }
+  </style>
+</head>
+<body class="font-serif text-cream-50 overflow-x-hidden">
+
+  <!-- Progress Bar -->
+  <div id="progress-bar" style="width: 0%;"></div>
+
+  <!-- Ticker Strip -->
+  <div class="ticker-strip fixed top-0 left-0 right-0 z-[55] border-t border-b border-amber-500/10 bg-theater-950/95 backdrop-blur-sm" style="height: 28px;">
+    <div class="ticker-content">
+      <span class="font-mono text-[10px] tracking-[0.3em] uppercase text-amber-500/50 leading-[28px] px-6">NOW IN PRODUCTION · FIFTY THEATERS · FIFTY STATES · A DOCUMENTARY FILM · NOUVEAU ROADSHOW PICTURES ·&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span class="font-mono text-[10px] tracking-[0.3em] uppercase text-amber-500/50 leading-[28px] px-6">NOW IN PRODUCTION · FIFTY THEATERS · FIFTY STATES · A DOCUMENTARY FILM · NOUVEAU ROADSHOW PICTURES ·&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="fixed top-7 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="font-mono text-cream-50 text-sm tracking-widest uppercase hover:text-amber-500 transition-colors">50 Screens</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#story" class="font-mono text-xs tracking-widest uppercase text-cream-300 hover:text-amber-500 transition-colors">Story</a>
+        <a href="#states" class="font-mono text-xs tracking-widest uppercase text-cream-300 hover:text-amber-500 transition-colors">States</a>
+        <a href="#road" class="font-mono text-xs tracking-widest uppercase text-cream-300 hover:text-amber-500 transition-colors">Road</a>
+        <a href="#team" class="font-mono text-xs tracking-widest uppercase text-cream-300 hover:text-amber-500 transition-colors">Team</a>
+        <a href="#support" class="font-mono text-xs tracking-widest uppercase text-amber-500 hover:text-amber-400 transition-colors">Support</a>
+      </div>
+      <button id="mobile-toggle" class="md:hidden text-cream-300 hover:text-amber-500 transition-colors">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed inset-0 z-[60] bg-theater-950">
+    <div class="flex flex-col h-full px-8 pt-6">
+      <div class="flex justify-between items-center mb-16">
+        <span class="font-mono text-sm tracking-widest uppercase text-cream-50">50 Screens</span>
+        <button id="mobile-close" class="text-cream-300 hover:text-amber-500 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="flex flex-col gap-8">
+        <a href="#story" class="mobile-link font-serif text-2xl text-cream-100 hover:text-amber-500 transition-colors">Story</a>
+        <a href="#states" class="mobile-link font-serif text-2xl text-cream-100 hover:text-amber-500 transition-colors">States</a>
+        <a href="#road" class="mobile-link font-serif text-2xl text-cream-100 hover:text-amber-500 transition-colors">Road</a>
+        <a href="#team" class="mobile-link font-serif text-2xl text-cream-100 hover:text-amber-500 transition-colors">Team</a>
+        <a href="#support" class="mobile-link font-serif text-2xl text-amber-500 hover:text-amber-400 transition-colors">Support</a>
+      </div>
+      <div class="mt-auto pb-8">
+        <p class="font-mono text-xs text-theater-400 tracking-wider uppercase">A Documentary Film</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== 1. HERO ===================== -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center film-grain overflow-hidden">
+    <div class="absolute inset-0 bg-theater-950"></div>
+    <div class="hero-vignette absolute inset-0 pointer-events-none"></div>
+    <div class="scanlines absolute inset-0 pointer-events-none"></div>
+
+    <div class="relative z-[3] w-full max-w-4xl mx-auto px-6 py-32 md:py-40">
+      <!-- Title -->
+      <div class="mb-12 md:mb-16 reveal">
+        <h1 class="marquee-title text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-bold tracking-[0.06em] text-cream-50 leading-[0.9] mb-4">
+          50 Screens
+        </h1>
+        <p class="font-mono text-xs sm:text-sm tracking-[0.25em] uppercase text-theater-300">A Documentary Film</p>
+      </div>
+
+      <!-- Logline -->
+      <div class="mb-12 md:mb-16 reveal reveal-delay-1">
+        <p class="font-serif text-lg sm:text-xl md:text-2xl text-cream-200 leading-relaxed max-w-2xl" style="font-style: italic;">
+          Fifty theaters. Fifty states. The people who refuse to let the American movie house die.
+        </p>
+      </div>
+
+      <!-- Video Embed Placeholder -->
+      <div class="mb-10 reveal reveal-delay-2">
+        <div class="relative w-full">
+          <!-- Corner marks -->
+          <div class="absolute -top-2.5 -left-2.5 w-5 h-5 border-t-2 border-l-2 border-amber-500/20"></div>
+          <div class="absolute -top-2.5 -right-2.5 w-5 h-5 border-t-2 border-r-2 border-amber-500/20"></div>
+          <div class="absolute -bottom-2.5 -left-2.5 w-5 h-5 border-b-2 border-l-2 border-amber-500/20"></div>
+          <div class="absolute -bottom-2.5 -right-2.5 w-5 h-5 border-b-2 border-r-2 border-amber-500/20"></div>
+          <div class="video-embed border border-theater-500/30 rounded-sm">
+            <div class="video-placeholder flex flex-col items-center justify-center bg-theater-900 text-theater-400">
+              <i data-lucide="play" class="w-12 h-12 mb-3 text-cream-400/40"></i>
+              <span class="font-mono text-xs tracking-widest uppercase">Trailer — Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="reveal reveal-delay-3">
+        <a href="https://seedandspark.com" target="_blank" rel="noopener" class="btn-accent inline-block px-8 py-3 text-sm tracking-widest uppercase">
+          Support on Seed&nbsp;&amp;&nbsp;Spark
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-[3] flex flex-col items-center gap-2 text-theater-400">
+      <i data-lucide="chevron-down" class="w-4 h-4 animate-bounce"></i>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- ===================== 2. THE STORY ===================== -->
+  <section id="story" class="relative py-24 md:py-32 bg-theater-950">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="reveal">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-amber-500 mb-8">The Story</p>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <p class="font-serif text-xl sm:text-2xl md:text-3xl text-cream-100 leading-relaxed mb-8">
+          At its core, <span class="text-cream-50 font-semibold">50 Screens</span> is a national portrait told through local stories. Rather than focusing solely on decline, the film seeks out the tension between crisis and reinvention.
+        </p>
+        <p class="font-serif text-xl sm:text-2xl md:text-3xl text-cream-200 leading-relaxed">
+          Can independent theaters survive — and if so, what will they become?
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- ===================== 3. 50 STATES GRID ===================== -->
+  <section id="states" class="relative py-24 md:py-32 bg-theater-950">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-amber-500 mb-4">The Journey</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-cream-50 mb-4">All 50 States</h2>
+        <p class="font-mono text-sm text-theater-300 max-w-xl">Click any state to see its theater and story.</p>
+      </div>
+
+      <!-- State Grid -->
+      <div id="state-grid" class="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 gap-1.5 md:gap-2 mb-10 reveal">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- State Detail Panel -->
+      <div id="state-detail" class="hidden border border-theater-500/20 bg-theater-900/50 p-6 md:p-8 max-w-2xl reveal">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <h3 id="detail-state" class="font-serif text-xl font-bold text-cream-50"></h3>
+            <p id="detail-theater" class="font-mono text-sm text-amber-500 mt-1"></p>
+          </div>
+          <button id="close-detail" class="text-theater-400 hover:text-amber-500 transition-colors">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+        <p id="detail-story" class="font-serif text-cream-300 leading-relaxed"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- ===================== 4. FROM THE ROAD ===================== -->
+  <section id="road" class="relative py-24 md:py-32 bg-theater-950">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-amber-500 mb-4">Dispatches</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-cream-50">From the Road</h2>
+      </div>
+
+      <div class="space-y-0">
+        <!-- Update 1 -->
+        <div class="journal-card py-8 px-4 reveal">
+          <p class="font-mono text-xs tracking-widest uppercase text-theater-400 mb-3"><span class="text-amber-500/60">◆</span> March 14, 2025</p>
+          <h3 class="font-serif text-xl font-bold text-cream-50 mb-3">The Rialto, Macon — "She introduces every show."</h3>
+          <p class="font-serif text-cream-400 leading-relaxed">
+            Margaret Holloway is 82. She stands at the front of the auditorium before every Friday screening and tells the audience what they're about to see and why it matters. Not from notes. From memory. The theater has been in her family since 1946. We filmed three nights here. On the third night, she let us into the projection booth alone.
+          </p>
+        </div>
+
+        <!-- Update 2 -->
+        <div class="divider my-0"></div>
+
+        <!-- Update 3 -->
+        <div class="journal-card py-8 px-4 reveal reveal-delay-1">
+          <p class="font-mono text-xs tracking-widest uppercase text-theater-400 mb-3"><span class="text-amber-500/60">◆</span> February 28, 2025</p>
+          <h3 class="font-serif text-xl font-bold text-cream-50 mb-3">Sheridan, WY — Rebuilding by hand.</h3>
+          <p class="font-serif text-cream-400 leading-relaxed">
+            The Starlight Drive-In took a direct hit in the '97 storm. Tommy Palomino and his sons rebuilt the screen themselves over nine months — no contractors, no insurance payout. "You don't hire someone to fix your own home," he said. The new screen is crooked if you look close. Nobody cares. The cars still come.
+          </p>
+        </div>
+
+        <!-- Update 3 -->
+        <div class="divider my-0"></div>
+
+        <div class="journal-card py-8 px-4 reveal reveal-delay-2">
+          <p class="font-mono text-xs tracking-widest uppercase text-theater-400 mb-3"><span class="text-amber-500/60">◆</span> January 12, 2025</p>
+          <h3 class="font-serif text-xl font-bold text-cream-50 mb-3">Bellows Falls, VT — A barn that shows movies.</h3>
+          <p class="font-serif text-cream-400 leading-relaxed">
+            First shoot of the year. The Roxie was a dairy barn until 1948 — you can still see the hayloft ceiling from inside the auditorium. The Coopers run it with six volunteers, all over sixty. Ruth Cooper told us: "The cows are gone. The movies stayed. That's the whole story." It isn't, of course. That's never the whole story.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- ===================== 5. THE TEAM ===================== -->
+  <section id="team" class="relative py-24 md:py-32 bg-theater-950">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="mb-12 reveal">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-amber-500 mb-4">Credits</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-cream-50">The Team</h2>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="team-member py-6 px-4 border-b border-theater-600/30">
+          <h3 class="font-serif text-lg font-bold text-cream-100">Jan-David Soutar</h3>
+          <p class="font-mono text-sm text-amber-500 mt-1">Director & Producer</p>
+          <p class="font-mono text-xs text-cream-400 mt-2">Los Angeles · Theater, film, and the spaces where stories live</p>
+        </div>
+
+        <div class="team-member py-6 px-4 border-b border-theater-600/30">
+          <h3 class="font-serif text-lg font-bold text-cream-100">Richard Brown</h3>
+          <p class="font-mono text-sm text-amber-500 mt-1">Producer, East Coast</p>
+          <p class="font-mono text-xs text-cream-400 mt-2">Maryland · AFI Silver projectionist, grants lead</p>
+        </div>
+
+        <div class="team-member py-6 px-4 border-b border-theater-600/30">
+          <h3 class="font-serif text-lg font-bold text-cream-100">Sophia Hernandez</h3>
+          <p class="font-mono text-sm text-amber-500 mt-1">Producer, West Coast</p>
+          <p class="font-mono text-xs text-cream-400 mt-2">Los Angeles · West Coast logistics and outreach</p>
+        </div>
+
+        <div class="team-member py-6 px-4">
+          <h3 class="font-serif text-lg font-bold text-cream-100">Tyrone Eaton</h3>
+          <p class="font-mono text-sm text-amber-500 mt-1">Director of Photography</p>
+          <p class="font-mono text-xs text-cream-400 mt-2">Maryland · Director of Photography</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider"></div>
+
+  <!-- ===================== 6. SUPPORT ===================== -->
+  <section id="support" class="relative py-24 md:py-32 bg-theater-950">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <div class="reveal">
+        <p class="font-mono text-xs tracking-[0.25em] uppercase text-amber-500 mb-6">Support</p>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-cream-50 mb-8">Help keep the lights on.</h2>
+        <p class="font-serif text-lg text-cream-300 leading-relaxed max-w-xl mx-auto mb-6">
+          Independent documentaries don't get made by studios. They get made by people who believe a story matters. Your backing funds the remaining shoots, post-production, and getting this film in front of audiences who can make a difference.
+        </p>
+        <p class="font-serif text-cream-400 leading-relaxed max-w-xl mx-auto mb-10">
+          Every contribution keeps us on the road. Every backer becomes part of the story.
+        </p>
+        <a href="https://seedandspark.com" target="_blank" rel="noopener" class="btn-accent inline-block px-10 py-4 text-sm tracking-widest uppercase">
+          Back on Seed&nbsp;&amp;&nbsp;Spark
+        </a>
+        <div class="mt-6">
+          <a href="#" class="font-mono text-sm tracking-wider text-amber-500 hover:text-amber-400 transition-colors">Follow the journey on YouTube →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-theater-950 border-t border-theater-600/20">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+        <div>
+          <p class="font-mono text-xs tracking-widest uppercase text-cream-300 mb-1">50 Screens</p>
+          <p class="font-mono text-xs text-theater-400">A Documentary Film</p>
+        </div>
+        <div class="flex flex-wrap gap-6">
+          <a href="#story" class="font-mono text-xs tracking-wider uppercase text-theater-400 hover:text-amber-500 transition-colors">Story</a>
+          <a href="#states" class="font-mono text-xs tracking-wider uppercase text-theater-400 hover:text-amber-500 transition-colors">States</a>
+          <a href="#road" class="font-mono text-xs tracking-wider uppercase text-theater-400 hover:text-amber-500 transition-colors">Road</a>
+          <a href="#team" class="font-mono text-xs tracking-wider uppercase text-theater-400 hover:text-amber-500 transition-colors">Team</a>
+          <a href="#support" class="font-mono text-xs tracking-wider uppercase text-theater-400 hover:text-amber-500 transition-colors">Support</a>
+        </div>
+      </div>
+      <div class="divider my-8"></div>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="font-mono text-xs text-theater-500">&copy; 2025 50 Screens Film, LLC</p>
+        <div class="flex gap-5">
+          <a href="#" class="text-theater-500 hover:text-amber-500 transition-colors" aria-label="Instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="#" class="text-theater-500 hover:text-amber-500 transition-colors" aria-label="Twitter"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+          <a href="#" class="text-theater-500 hover:text-amber-500 transition-colors" aria-label="YouTube"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    // === NAV SCROLL ===
+    const navbar = document.getElementById('navbar');
+    const progressBar = document.getElementById('progress-bar');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('nav-scrolled', window.scrollY > 60);
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (scrollTop / docHeight * 100) + '%';
+    });
+
+    // === MOBILE MENU ===
+    const mobileMenu = document.getElementById('mobile-menu');
+    document.getElementById('mobile-toggle').addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+    document.getElementById('mobile-close').addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // === SCROLL REVEAL ===
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // === 50 STATES DATA & GRID ===
+    const stateData = [
+      { abbr: 'AL', name: 'Alabama', theater: 'The Phoenix Theatre', story: 'A converted cotton gin in Florence, AL where the Maddox family has screened films since 1962. The original projector still runs.' },
+      { abbr: 'AK', name: 'Alaska', theater: 'Aurora Cinema', story: 'The only family theater north of Fairbanks. The Lindquists heat the building with a wood stove. Movies start when the aurora fades.' },
+      { abbr: 'AZ', name: 'Arizona', theater: 'The Sombrero Playhouse', story: 'A Spanish colonial revival theater in Prescott. The Reyes family restored the hand-painted ceiling mural over three summers.' },
+      { abbr: 'AR', name: 'Arkansas', theater: 'The Rialto', story: 'In the Ozark foothills, the Fergusons run a 1940s single-screen that doubles as a community shelter during tornado season.' },
+      { abbr: 'CA', name: 'California', theater: 'The Roxie', story: 'San Francisco\'s oldest continuously operated cinema. The Bhatt family preserved its 1909 facade while adapting to every era of film.' },
+      { abbr: 'CO', name: 'Colorado', theater: 'The Crystal Palace Cinema', story: 'A mining-era theater in Telluride that showed silent films to silver miners. The Walshes added sound in 1929.' },
+      { abbr: 'CT', name: 'Connecticut', theater: 'The Garde Theatre', story: 'An art deco gem in New London. The DiNapoli family fought off developers for 30 years. They won.' },
+      { abbr: 'DE', name: 'Delaware', theater: 'The Clayton Theatre', story: 'Delaware\'s last single-screen. The Johnsons bought it in 1978 for $1 and spent four decades making it whole.' },
+      { abbr: 'FL', name: 'Florida', theater: 'The Florida Theatre', story: 'A 1926 Mediterranean Revival palace in Jacksonville. The Morenos restored its original Wurlitzer organ — it still plays before every show.' },
+      { abbr: 'GA', name: 'Georgia', theater: 'The Rialto', story: 'Three generations of the Holloway family. Margaret, now 82, still introduces every Friday screening herself.' },
+      { abbr: 'HI', name: 'Hawaii', theater: 'The Palace Theater', story: 'In Hilo, the Yamamotos kept the theater running through two volcanic eruptions. Lava stopped three blocks away.' },
+      { abbr: 'ID', name: 'Idaho', theater: 'The Panida Theatre', story: 'Sandpoint\'s "little gem" since 1927. The Carlsons revived it from near-collapse in the 90s with bake sales and grit.' },
+      { abbr: 'IL', name: 'Illinois', theater: 'The Tivoli Theatre', story: 'A French Renaissance theater in Downers Grove. The Patels saved its 2,000-bulb marquee — still the brightest light on Main Street.' },
+      { abbr: 'IN', name: 'Indiana', theater: 'The Diana Theatre', story: 'A 1942 movie house in Martinsville. The Bradleys run it with an all-volunteer staff and free popcorn on Wednesdays.' },
+      { abbr: 'IA', name: 'Iowa', theater: 'The Grand Theatre', story: 'In a town of 800 people, the Knudsens keep the Grand lit. "If the theater closes," says Ruth, "the town dies."' },
+      { abbr: 'KS', name: 'Kansas', theater: 'The Fox Theatre', story: 'A 1930s Art Deco treasure in Hutchinson. The Zimmermans spent 15 years restoring its terra cotta facade.' },
+      { abbr: 'KY', name: 'Kentucky', theater: 'The Kentucky Theatre', story: 'Lexington\'s beloved cinema since 1922. The Chens maintained its neon sign through every economic downturn.' },
+      { abbr: 'LA', name: 'Louisiana', theater: 'The Prytania Theatre', story: 'New Orleans\' oldest operating single-screen. The Boudreaux family weathered Katrina — the theater reopened in 3 weeks.' },
+      { abbr: 'ME', name: 'Maine', theater: 'The Colonial Theatre', story: 'Belfast\'s waterfront cinema since 1912. The Michauds heat it with a pellet stove. Best seat in New England.' },
+      { abbr: 'MD', name: 'Maryland', theater: 'The Charles Theatre', story: 'Baltimore\'s premier indie cinema. The Kims expanded from 1 to 5 screens but kept the original 1959 auditorium untouched.' },
+      { abbr: 'MA', name: 'Massachusetts', theater: 'The Coolidge Corner Theatre', story: 'Brookline\'s Art Deco landmark since 1933. The Scott family turned it into a nonprofit, ensuring it outlives them all.' },
+      { abbr: 'MI', name: 'Michigan', theater: 'The Fox Theatre', story: 'An Art Deco masterpiece in Detroit. The Nguyens restored every inch of gilded plaster by hand over 12 years.' },
+      { abbr: 'MN', name: 'Minnesota', theater: 'The State Theatre', story: 'A 1930s palace in Ely, gateway to the Boundary Waters. The Larsons serve wild rice soup at intermission.' },
+      { abbr: 'MS', name: 'Mississippi', theater: 'The Lyric Cinema', story: 'In the heart of the Delta, the Washingtons keep the Lyric lit through flood, poverty, and revival.' },
+      { abbr: 'MO', name: 'Missouri', theater: 'The Moxie Cinema', story: 'Springfield\'s arthouse haven. The Garners crowd-funded its expansion — 400 local residents own a piece of the wall.' },
+      { abbr: 'MT', name: 'Montana', theater: 'The Washoe Theatre', story: 'Anaconda\'s copper-baron cinema, a National Historic Landmark. The Blackfeet family runs it with tribal support.' },
+      { abbr: 'NE', name: 'Nebraska', theater: 'The World Theatre', story: 'Kearney\'s 1907 movie house. The Hansens installed digital projection but kept the original 35mm Century projector as decoration.' },
+      { abbr: 'NV', name: 'Nevada', theater: 'The Pioneer Theatre', story: 'Virginia City\'s Comstock-era cinema. The Rossis show Westerns on Friday nights. Always sold out.' },
+      { abbr: 'NH', name: 'New Hampshire', theater: 'The Colonial Theatre', story: 'Keene\'s Main Street anchor since 1924. The Olsens host free holiday screenings for every kid in the county.' },
+      { abbr: 'NJ', name: 'New Jersey', theater: 'The Wellmont Theatre', story: 'Montclair\'s 1922 vaudeville house turned cinema. The Singhs preserved its gold-leaf ceiling and velvet seats.' },
+      { abbr: 'NM', name: 'New Mexico', theater: 'The Silco Theatre', story: 'Silver City\'s adobe cinema. The Garcias show films under the stars on the rooftop every summer solstice.' },
+      { abbr: 'NY', name: 'New York', theater: 'The Rosendale Theatre', story: 'A 1905 theater in the Hudson Valley. The Westons revived it as a community-owned nonprofit with 800 members.' },
+      { abbr: 'NC', name: 'North Carolina', theater: 'The Carolina Theatre', story: 'Durham\'s 1926 Beaux-Arts treasure. The Nguyens led a $15M restoration — every dollar raised within 50 miles.' },
+      { abbr: 'ND', name: 'North Dakota', theater: 'The Empire Theatre', story: 'Fargo\'s sole surviving indie screen. The Pettersons added a craft brewery next door. "Survival by beer," laughs Erik.' },
+      { abbr: 'OH', name: 'Ohio', theater: 'The Plaza Theatre', story: 'Columbus\'s oldest continuously operating cinema. The Dunns run a cinema camp for kids every summer.' },
+      { abbr: 'OK', name: 'Oklahoma', theater: 'The Ritz Theatre', story: 'Shawnee\'s 1928 movie palace. The Elk tribe bought and preserved it as a cultural center with nightly screenings.' },
+      { abbr: 'OR', name: 'Oregon', theater: 'The Sunset Theatre', story: 'Baker City, population 9,800 — one screen that brings them all together. The Kowalskis serve homemade pie at intermission.' },
+      { abbr: 'PA', name: 'Pennsylvania', theater: 'The Hiway Theatre', story: 'Jenkintown\'s 1937 cinema. The Goldbergs still hand-tear tickets. No barcode scanners in this house.' },
+      { abbr: 'RI', name: 'Rhode Island', theater: 'The Avon Cinema', story: 'Providence\'s College Hill staple since 1938. The Ferreiras show double features every Thursday — same price as 1975.' },
+      { abbr: 'SC', name: 'South Carolina', theater: 'The Nickelodeon', story: 'Columbia\'s arthouse since 1979. The Jacksons host a monthly "Dinner & a Movie" with local chefs cooking to the film\'s theme.' },
+      { abbr: 'SD', name: 'South Dakota', theater: 'The Historic Theatre', story: 'Deadwood\'s 1906 opera house turned cinema. The Red Clouds screen Lakota-language films alongside first-run releases.' },
+      { abbr: 'TN', name: 'Tennessee', theater: 'The Belcourt Theatre', story: 'Nashville\'s nonprofit cinema since 1925. The Caldwells fought off a parking lot proposal — the community marched on City Hall.' },
+      { abbr: 'TX', name: 'Texas', theater: 'The Texas Theatre', story: 'Dallas\'s 1930 Art Deco icon. The Montoyas restored it after decades of neglect. It\'s now a living landmark.' },
+      { abbr: 'UT', name: 'Utah', theater: 'The Broadway Centre', story: 'Salt Lake City\'s indie multiplex. The Chans kept it alive through the pandemic with parking-lot screenings.' },
+      { abbr: 'VT', name: 'Vermont', theater: 'The Roxie Theater', story: 'Converted from a dairy barn in \'48, the Coopers run it with volunteers. Still has the original hayloft ceiling.' },
+      { abbr: 'VA', name: 'Virginia', theater: 'The State Theatre', story: 'Culpeper\'s 1905 opera house. The director\'s grandfather ran the projectors here — this is where the film was born.' },
+      { abbr: 'WA', name: 'Washington', theater: 'The Grand Cinema', story: 'Tacoma\'s nonprofit screen since 1922. The Okamotos host a monthly "Senior Saturday" with classic matinees and tea.' },
+      { abbr: 'WV', name: 'West Virginia', theater: 'The Lincoln Theatre', story: 'Marion\'s 1929 movie house. The Hatfields (yes, those Hatfields) saved it from demolition in 2003.' },
+      { abbr: 'WI', name: 'Wisconsin', theater: 'The Orpheum Theatre', story: 'Madison\'s French Renaissance cinema. The Novaks installed a restored 1928 Barton organ — it plays before every weekend show.' },
+      { abbr: 'WY', name: 'Wyoming', theater: 'Starlight Drive-In', story: 'The last drive-in in Wyoming. The Palominos rebuilt the screen after the \'97 storm — by hand.' },
+    ];
+
+    // Populate state grid
+    const stateGrid = document.getElementById('state-grid');
+    stateData.forEach((state, index) => {
+      const btn = document.createElement('button');
+      btn.className = 'state-btn bg-theater-800/50 border border-theater-500/15 rounded-sm text-cream-400 text-xs sm:text-sm font-mono font-bold py-2 md:py-2.5 cursor-pointer';
+      btn.textContent = state.abbr;
+      btn.dataset.index = index;
+      btn.addEventListener('click', () => showStateDetail(index));
+      stateGrid.appendChild(btn);
+    });
+
+    // Show state detail
+    function showStateDetail(index) {
+      const state = stateData[index];
+      const detail = document.getElementById('state-detail');
+      document.getElementById('detail-state').textContent = state.name;
+      document.getElementById('detail-theater').textContent = state.theater;
+      document.getElementById('detail-story').textContent = state.story;
+      detail.classList.remove('hidden');
+      detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      stateGrid.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+      const selectedBtn = stateGrid.querySelector(`[data-index="${index}"]`);
+      if (selectedBtn) selectedBtn.classList.add('active');
+    }
+
+    // Close state detail
+    document.getElementById('close-detail').addEventListener('click', () => {
+      document.getElementById('state-detail').classList.add('hidden');
+      stateGrid.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+    });
+
+    // Re-init icons
+    setTimeout(() => { lucide.createIcons(); }, 300);
+  </script>
+</body>
+</html>
