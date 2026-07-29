@@ -209,3 +209,31 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
    **screen credits**; the Bible says producer credits are **not** offered (PGA rules).
    The tier structure below in `answer-bank.md` is the *sponsorship* model; crowdfunding
    perks are different. Keep them distinct and confirm current policy.
+4. **SFFilm eligibility (found 2026-07-29):** The Bible says SFFilm was "submitted June 9,
+   awaiting decision." The budget sheet's own tracking tab instead marks SFFilm **"NOT
+   ELIGIBLE YET — requires project within 3 months of post-production"** and says to
+   revisit in 2027. These flatly contradict each other. **Do not assume either is right —
+   ask the user** what actually happened with SFFilm before referencing it again.
+5. **NEH Media Projects status (found 2026-07-29):** The Bible's funding table (June 20)
+   says NEH Media Projects **"DID NOT QUALIFY — remove from pipeline."** The budget
+   sheet's grant tracker still lists it as **"To Apply — PRIORITY (no nonprofit
+   required)."** Deadline (June 25, 2026) has passed either way. **Ask the user** which
+   status is current before treating NEH as either dead or still open.
+6. **Sundance cycle (resolved 2026-07-29):** Earlier notes said Sundance was "submitted"
+   for a June 15, 2026 deadline. That was wrong — the actual Drive artifact is a full
+   **"Sundance Full Application 2027 Doc Fund"** packet (prepared June 15, 2026, for the
+   **2027** cycle), and the budget tracker confirms status "Planning" / "Will apply Fall
+   2026 cycle," not submitted. Use the 2027-cycle framing going forward.
+7. **Fiscal sponsor (updated 2026-07-29):** Superseded — the Bible's May/June "IDA or TFC"
+   plan was replaced at the June 20 meeting by **From the Heart Productions** (~$80 cost,
+   no nonprofit status required, faster than IDA/Fractured Atlas). A Jotform-based fiscal-
+   sponsorship inquiry is confirmed in Gmail (July 8). **Still not secured** as of the last
+   sync — this remains the single biggest gate on the rest of the pipeline.
+8. **New team member:** **Athena Rethis** joined June 20, 2026 and was granted Notion
+   access. Her role isn't fully defined in the Bible yet (seen restarting Laemmle Theatres
+   outreach) — confirm her title/scope before crediting her in an application.
+9. **Two Film Independent programs possibly missed:** daily-brief emails flagged **Project
+   Involve 2027** (non-member deadline July 13, member deadline July 27 — both passed as of
+   July 29, 2026, no application found in Drive) and **Fast Track** (a go/no-go decision
+   flagged around June 21, no follow-up found). Confirm with the user whether either was
+   actually pursued before assuming they were missed.

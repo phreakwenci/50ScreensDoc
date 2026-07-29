@@ -18,7 +18,15 @@ the Google Drive MCP (`read_file_content`, `search_files`).
   - `WEHO Special Arts Grant`: `1ny88z7blps4hpsvkjDLftBdkO5aTztmCL9lNDM6gMsI`
   - `BAVC Media Grant` (stub): `18aw6044Bbf_Jfx03Bdva7P_2Sq3LlLSfPa87VX3ol8Y`
   - `Roy W Dean` (subfolder): `1eWyLfnaNcvGAK-M650iMn-L68DRYFyeX`
-  - `Sundance` (subfolder): `1ozGw0cmYDHz2DtOrloGo0sfCkTORlaIQ`
+  - `Sundance` (subfolder): `1ozGw0cmYDHz2DtOrloGo0sfCkTORlaIQ` — contains the **real**
+    current Sundance artifacts: `Sundance Full Application 2027 Doc Fund.pdf`
+    (`1CzPCQ1g0gH0H6GFjD5EbP8BNdkmodedU`) and `Proposal-Checklist-2027-Sundance-Institute-
+    Documentary-Fund-Application.pdf` (`14uU--tiffKWXjqqJKlDmS4Zydy0vCY8F`) — both dated
+    June 15, 2026, both for the **2027** cycle. Supersedes any note about a June 2026
+    Sundance submission.
+  - `Jan-David_Soutar_Professional_Knowledge_Base.md` — a personal facts doc, viewed as
+    recently as **July 27, 2026**: `1D20nmbOQpuIA2xE7Q3mzpLng88nGbUiPV-xZ3-tiXlA`. Not yet
+    read into this skill — worth checking for bio/background updates.
 - **Budget folder:** `1eaY2XUuCS7xof4kY3K-ZtOmH8dSFnnlK`
   - **CURRENT budget:** "50 Screens Budget" sheet `1FGBzXg6RyewCvGQ5fuxq4N2CULTGbdJBcQQJ2AlEvwA`
     — **the tracking tab of this sheet is the pipeline source of truth.** Grand total
@@ -67,7 +75,29 @@ No dedicated 50 Screens grants base exists (closest: a generic "Indie Film Produ
 base). The pipeline tracker is the **Google Sheet tracking tab**, not Airtable — do not
 create an Airtable tracker unless the user asks.
 
+## Fiscal sponsor (updated 2026-07-29)
+The plan changed after this file was first written: **From the Heart Productions** (the
+Roy W. Dean people) is now the team's leading fiscal-sponsor candidate — ~$80, no
+nonprofit status required, faster than IDA/Fractured Atlas. A Jotform-based sponsorship
+inquiry is confirmed in Gmail (July 8, 2026: "Ready for Fiscal Sponsorship?"). **Still not
+finalized** as of the last check — this is the top blocking dependency in the pipeline.
+`mdlafilms@gmail.com` also receives their monthly "Art of Film Funding" newsletter
+(`info@fromtheheartproductions.com`), which sometimes references grant opportunities and
+finalist announcements — worth a skim periodically.
+
 ## Submission portals (fill locally; never final-submit without confirmation)
 - SFFilm: sffilm.grantplatform.com  ·  Film Independent: filmindependent1.submittable.com
-- Others (Sundance, NEH/Grants.gov, Roy W. Dean, Seed&Spark, WeFunder) — capture each
-  portal URL in the tracker as applications open.
+- Roy W. Dean / From the Heart Productions: via Jotform (application-received
+  confirmation on file, July 1, 2026).
+- Others (Sundance 2027 cycle, NEH/Grants.gov) — capture each portal URL in the tracker as
+  applications open.
+
+## Verified-via-Gmail status (as of 2026-07-29 — see grant skill for full detail)
+- **Roy W. Dean:** confirmed submitted (Jotform receipt, July 1, 2026).
+- **No decision/acceptance emails found** for SFFilm, Sundance, or Film Independent Doc
+  Lab in the connected inbox as of this sync — absence of a rejection ≠ confirmation of
+  submission; see the conflict notes in `project-facts.md` for SFFilm and NEH specifically.
+- Daily-brief automation (`mdlafilms+cc@gmail.com`) flagged **Film Independent Project
+  Involve 2027** and **Film Independent Fast Track** as live decisions in early-to-mid
+  July; no follow-through found in Drive. Both may have been missed — confirm with the
+  user.
