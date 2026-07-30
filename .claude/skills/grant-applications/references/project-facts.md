@@ -219,11 +219,13 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
    sheet's grant tracker still lists it as **"To Apply — PRIORITY (no nonprofit
    required)."** Deadline (June 25, 2026) has passed either way. **Ask the user** which
    status is current before treating NEH as either dead or still open.
-6. **Sundance cycle (resolved 2026-07-29):** Earlier notes said Sundance was "submitted"
-   for a June 15, 2026 deadline. That was wrong — the actual Drive artifact is a full
-   **"Sundance Full Application 2027 Doc Fund"** packet (prepared June 15, 2026, for the
-   **2027** cycle), and the budget tracker confirms status "Planning" / "Will apply Fall
-   2026 cycle," not submitted. Use the 2027-cycle framing going forward.
+6. **Sundance cycle (resolved 2026-07-29, confirmed by JD):** **Status = Submitted.** The
+   Drive artifact is a full **"Sundance Full Application 2027 Doc Fund"** packet, filed in
+   June 2026 — "2027" is the fund's decision-year naming convention, not a future
+   submission date. The budget sheet's "Planning" / "Will apply Fall 2026 cycle" language
+   is a **stale tracker note that was never updated after the actual submission** — don't
+   trust that specific line without cross-checking. Correct status: **Applied, June 2026,
+   $50,000 asked, awaiting decision (expected ~Spring 2027).**
 7. **Fiscal sponsor (updated 2026-07-29):** Superseded — the Bible's May/June "IDA or TFC"
    plan was replaced at the June 20 meeting by **From the Heart Productions** (~$80 cost,
    no nonprofit status required, faster than IDA/Fractured Atlas). A Jotform-based fiscal-
@@ -237,3 +239,15 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
    July 29, 2026, no application found in Drive) and **Fast Track** (a go/no-go decision
    flagged around June 21, no follow-up found). Confirm with the user whether either was
    actually pursued before assuming they were missed.
+10. **Lesson from the Sundance correction (2026-07-29):** the budget sheet's tracking tab
+    can itself be stale — it wasn't updated after at least one real submission (Sundance).
+    Treat conflicts between the tracker and a team member's direct confirmation by
+    **trusting the person**, not the spreadsheet, and then go fix the spreadsheet.
+11. **"Who Let The Docs Out" grant — likely thematic mismatch (found 2026-07-29):**
+    appeared in Richard's AXS Film Grant draft funding table at $50,000 "to apply." Real
+    org, but their current funds are the **Coexistence Documentary Fund** (human-animal
+    relationships) and the **Automation & Humanity Documentary Fund** (AI/autonomous
+    systems) — neither matches 50 Screens. The $50K figure is also a pitch-competition
+    pool split across 6 filmmakers, not a guaranteed single award (standard grants run
+    $4–8K research / $7–15K development). **Confirm with Richard before keeping this line**
+    — as understood today it doesn't fit and the amount is overstated. docsout.org
