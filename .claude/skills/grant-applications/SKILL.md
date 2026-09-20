@@ -28,18 +28,28 @@ one that matches the task.
 | `references/project-facts.md` | State any fact about the film (logline, summary, budget, team, distribution, timeline, artistic approach). The canonical source — never invent these. |
 | `references/answer-bank.md` | Draft or adapt an answer to a common application question. Proven, voice-correct copy at multiple lengths. |
 | `references/writing-playbook.md` | Judge whether a draft is strong, or fix a weak one. The house-style rules distilled from real reviewer feedback. |
-| `references/opportunities.md` | Match the project to funders, screen eligibility, or check the seeded pipeline and where to hunt for new opportunities. |
+| `references/opportunities.md` | Match the project to funders, screen eligibility, or check the seeded pipeline. |
+| `references/discovery-sources.md` | Actually go hunting for new grants/labs — the databases, the recurring calendar, the newsletters already arriving unused, and the communities (incl. Black Public Media / PitchBLACK for the Atlanta focus). Load this whenever "find new opportunities" means more than one WebSearch. |
 | `references/sources.md` | Reach live data — Drive doc IDs, the budget/tracking sheet, Notion Bible, project Gmail, theater database. |
 
 ## Core workflows
 
 ### 1. Find labs & grants
-Use `WebSearch` plus the aggregators listed in `opportunities.md`. Screen every
-candidate against the **eligibility profile** in that file (US feature doc, in
-development/early production, fiscal-sponsorship-ready, LA + MD/DC team, director of
-Eastern Band Cherokee heritage, Latina DP, vérité, theatrical + community-arts angle).
-Report matches with: funder, amount, deadline, eligibility fit, what's required, and a
-one-line "why it fits 50 Screens." Offer to add strong matches to the tracker.
+Don't default straight to an open-ended `WebSearch`. Work `discovery-sources.md` first —
+it's the actual hunting infrastructure (databases, a recurring quarterly deadline
+calendar, newsletters already landing in the inbox unused, and relevant communities).
+Screen every candidate against the **eligibility profile** in `opportunities.md` (US
+feature doc, in development/early production, fiscal-sponsorship-ready, LA + MD/DC team,
+director of Eastern Band Cherokee heritage, Latina DP, vérité, theatrical +
+community-arts angle, **plus the Black-owned/minority-owned Atlanta focus added Aug 29 —
+re-screen `discovery-sources.md`'s community list whenever scope changes**). Report
+matches with: funder, amount, deadline, eligibility fit, what's required, and a one-line
+"why it fits 50 Screens." Offer to add strong matches to the tracker.
+
+**Standing cadence, not a one-time lookup:** pull the current-season No Film School
+"Massive List" quarterly, and skim IDA Weekly / Film Independent's digest / From the
+Heart Productions' newsletter for opportunities specifically — see `discovery-sources.md`
+§"How to actually use this file."
 
 ### 2. Draft or edit an application
 1. Pull the funder's actual questions (from the portal, a PDF, or the user).
