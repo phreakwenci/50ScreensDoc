@@ -30,7 +30,7 @@ one that matches the task.
 | `references/writing-playbook.md` | Judge whether a draft is strong, or fix a weak one. The house-style rules distilled from real reviewer feedback. |
 | `references/opportunities.md` | Match the project to funders, screen eligibility, or check the seeded pipeline. |
 | `references/discovery-sources.md` | Actually go hunting for new grants/labs — the databases, the recurring calendar, the newsletters already arriving unused, and the communities (incl. Black Public Media / PitchBLACK for the Atlanta focus). Load this whenever "find new opportunities" means more than one WebSearch. |
-| `references/sources.md` | Reach live data — Drive doc IDs, the budget/tracking sheet, Notion Bible, project Gmail, theater database. |
+| `references/sources.md` | Reach live data — Drive doc IDs, the **Master Grant & Submission Tracker** (pipeline source of truth), the budget sheet, Notion Bible, project Gmail, theater database. |
 
 ## Core workflows
 
@@ -60,10 +60,14 @@ Heart Productions' newsletter for opportunities specifically — see `discovery-
 5. Save drafts to the project's Drive grants folder (see `sources.md`) when asked.
 
 ### 3. Track the pipeline
-The source of truth is the **tracking tab of the "50 Screens Budget" Google Sheet**
-(ID in `sources.md`), not a file in this repo. Read it via the Google Drive/Sheets
-tools. When updating status, use the honesty ladder **Secured / Applied / Planned**
-(see playbook) and confirm the change with the user before writing.
+The source of truth is the **Master Grant & Submission Tracker Google Sheet** (ID/URL in
+`sources.md`), not a file in this repo. Read/write it via the Google Sheets MCP (load the
+google-workspace skill's `sheets.md` first). It has a `Pipeline` tab (one row per
+opportunity, 8-value status dropdown) and a formula-driven `Summary` tab. When updating
+status, use the honesty ladder **Secured / Applied / Planned** plus **To Screen / Skip /
+Missed / Not Eligible / Needs Review** (see playbook and `sources.md`) and confirm the
+change with the user before writing. After adding or screening a new opportunity (e.g.
+from `discovery-sources.md`), offer to add it as a new row here.
 
 ### 4. Prepare & assist submission ("fill, then you submit")
 Submission requires a browser or OS automation tool that is **only present when this
@@ -81,7 +85,7 @@ the skill locally to auto-fill.
 | Facts / voice | `references/*` | — |
 | Find new opportunities | `WebSearch` | ask user |
 | Read/write project docs | Google Drive MCP | user pastes / downloads |
-| Track pipeline | Google Sheets via Drive MCP → budget sheet | user reads it out |
+| Track pipeline | Google Sheets MCP → Master Grant & Submission Tracker | user reads it out |
 | Correspondence | Gmail MCP | user pastes threads |
 | Production Bible | Notion (full read, if enabled) | mirrored facts in `references/` |
 | Fill a portal / submit | Chrome-devtools or Windows MCP (local only) | prepare packet; user submits |
@@ -93,7 +97,8 @@ If a capability's tool is missing, say so plainly and use the fallback — don't
 - **Never** click final "Submit" on an application, **send** an email to a funder, or
   **pay** a fee without explicit, in-the-moment user confirmation. These are
   irreversible and often cost money.
-- **Never** overwrite funding status in the budget sheet without confirmation.
+- **Never** overwrite funding status in the Master Grant & Submission Tracker (or the
+  budget sheet) without confirmation.
 - Enforce the **Secured / Applied / Planned** honesty rule on every dollar figure and
   status. Never describe a planned or unsubmitted grant as "in process" or "secured."
 - Keep facts consistent with `project-facts.md`. If a source conflicts, flag it rather

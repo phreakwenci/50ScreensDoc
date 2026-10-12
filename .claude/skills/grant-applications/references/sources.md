@@ -29,8 +29,10 @@ the Google Drive MCP (`read_file_content`, `search_files`).
     read into this skill — worth checking for bio/background updates.
 - **Budget folder:** `1eaY2XUuCS7xof4kY3K-ZtOmH8dSFnnlK`
   - **CURRENT budget:** "50 Screens Budget" sheet `1FGBzXg6RyewCvGQ5fuxq4N2CULTGbdJBcQQJ2AlEvwA`
-    — **the tracking tab of this sheet is the pipeline source of truth.** Grand total
-    $614,451. Also submit the **Budget Topsheet as PDF** to funders.
+    — the budget-line totals source ($614,451 grand total). Also submit the **Budget
+    Topsheet as PDF** to funders. **No longer the pipeline source of truth** — its
+    tracking tab is superseded by the Master Grant & Submission Tracker below (built
+    2026-10-12); don't update grant status there anymore.
   - Archived budget (do not use): `ARCHIVE_50Screens_Budget`
     `1L02WFUwdeOAtmTwKveahSbWmRiobWf6byzZBXW8jxzg`
   - Budget notes: `50Screens_Budget_Notes` `1c7gq4myVe_dnhF5o61t1iMInm6m6ACgeaFexhCLj_-I`
@@ -45,6 +47,26 @@ the Google Drive MCP (`read_file_content`, `search_files`).
 
 > Note: some files are owned by `richardbrown.filmmaker@gmail.com` and shared; both JD's
 > and Richard's Drives hold pieces of the pipeline.
+
+## Master Grant & Submission Tracker (pipeline source of truth)
+**[50 Screens — Master Grant & Submission Tracker](https://docs.google.com/spreadsheets/d/1gmk6h0UmzxHsICvIAt7OIXQU1i58fgPD9AhWWpS3xmE/edit)**
+(`1gmk6h0UmzxHsICvIAt7OIXQU1i58fgPD9AhWWpS3xmE`) — built 2026-10-12, this is now **the**
+pipeline source of truth. It replaces the old budget sheet's tracking tab and this file's
+own "Live pipeline" table (see `opportunities.md`) as the single place to check or update
+grant/lab/crowdfunding status.
+- **Pipeline tab:** every funder/lab/crowdfunding opportunity surfaced for the project,
+  one row each. Columns: Funder/Program, Type, Amount, Amount Notes, Status, Deadline,
+  Date Submitted, Notification Expected, Owner, Eligibility/Fit Notes, Confirmation/
+  Evidence, Last Verified, Source, Notes. Status uses an 8-value dropdown with
+  conditional-format color-coding: **Secured · Applied · Planned · To Screen · Skip ·
+  Missed · Not Eligible · Needs Review** (the last for live conflicts — SFFilm, NEH Media
+  Projects, Doc Society, Who Let The Docs Out — that need a human answer, not a guess).
+- **Summary tab:** status counts and dollar totals, all formulas (`COUNTIF`/`SUMIF`) over
+  the Pipeline tab, plus budget context (secured $ as % of the $614,451 total).
+- Read with Google Sheets MCP `get_values`; write status/date changes with
+  `update_values` or `update_formulas` **only after confirming with the user** (same rule
+  as the old budget-sheet tracker). Read the google-workspace skill's `sheets.md` first —
+  formulas must stay formulas, never typed-over results.
 
 ## Notion — 50 Screens Production Bible
 Read/query with the Notion MCP (`notion-fetch`, `notion-search`, `notion-query-data-sources`).
@@ -72,8 +94,8 @@ See the conflict list in `project-facts.md`.
 
 ## Airtable
 No dedicated 50 Screens grants base exists (closest: a generic "Indie Film Production"
-base). The pipeline tracker is the **Google Sheet tracking tab**, not Airtable — do not
-create an Airtable tracker unless the user asks.
+base). The pipeline tracker is the **Master Grant & Submission Tracker Google Sheet**
+above, not Airtable — do not create an Airtable tracker unless the user asks.
 
 ## Fiscal sponsor (updated 2026-07-29)
 The plan changed after this file was first written: **From the Heart Productions** (the
