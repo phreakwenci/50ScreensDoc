@@ -30,7 +30,12 @@ Status legend: **Confirmed** · **Active** (in conversation) · **To contact** �
   first.** Marquee subject.
 - **Laemmle Theatres** (LA). *To contact.* 3rd-generation family (Greg Laemmle). Also a
   strong **pitch-video** partner candidate (lead with their success story).
-- **Third CA candidate — TBD** (replacing ruled-out Vidiots).
+- **Vidiots** (Eagle Rock, CA). *Researching — reinstated 2026-08-15.* Previously ruled
+  out for being nonprofit (see below); the Aug 15 scope expansion to nonprofit/
+  single-screen/family-owned theaters reverses that call. The Bible flags this as
+  worth "a deliberate second look," not yet actually re-screened — confirm current
+  status/contacts before treating it as a live candidate.
+- **Third CA candidate — TBD.**
 
 ### South — Georgia
 - **Plaza Theatre / Tara Theatre — Christopher Escobar** (Atlanta). *To contact — JD via
@@ -74,5 +79,7 @@ subjects. Verify current details in the spreadsheet.
   distribution conversations begin.
 
 ## Ruled out (do not re-pitch as anchor subjects)
-- **Vidiots** (Eagle Rock, CA) — nonprofit; ruled out as CA anchor.
 - **Velaslavasay Panorama / Union Theatre** (LA) — a museum, not a working cinema.
+
+*(Vidiots was ruled out here for being nonprofit — see the California section above;
+the Aug 15 scope expansion reversed that reasoning, so it's moved back to Researching.)*
