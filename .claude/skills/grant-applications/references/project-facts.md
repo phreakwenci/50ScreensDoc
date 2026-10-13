@@ -4,7 +4,9 @@ This is the single source of truth for facts about the film. **Never invent or a
 these when drafting applications.** If a funder needs something not here, ask the user.
 Last synced from the SFFilm Documentary Film Fund 2026 application, the Film
 Independent Lab Grant draft, the Sundance Film Grant doc, and the "50 Screens Budget"
-sheet (see `sources.md`). Keep in sync with the Notion Production Bible.
+sheet (see `sources.md`). Keep in sync with the Notion Production Bible — **conflict
+items 8 and 11–13 were pulled directly from the Bible on 2026-10-13** (its Sept 4/Sept 8
+catch-up entries); everything else above predates that pull and may itself be stale.
 
 ## One-liner / identity
 - **Title:** 50 Screens
@@ -232,8 +234,14 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
    sponsorship inquiry is confirmed in Gmail (July 8). **Still not secured** as of the last
    sync — this remains the single biggest gate on the rest of the pipeline.
 8. **New team member:** **Athena Rethis** joined June 20, 2026 and was granted Notion
-   access. Her role isn't fully defined in the Bible yet (seen restarting Laemmle Theatres
-   outreach) — confirm her title/scope before crediting her in an application.
+   access. Still no formal title in the Bible, but her working role is now evidenced by
+   actions through early Sept 2026: restarted Laemmle Theatres outreach (for-profit
+   theaters only, via podcast/YouTube channels); soft-pitched Brain Dead Studios (a small
+   one-screen LA venue, Phase 2 candidate); proposed GoFundMe as an added funding
+   platform; and brought a personal industry contact (Angela Boysburn, PBS
+   Production/Development) in for an advisory call. Functionally: theater
+   outreach + industry-contact sourcing. Confirm an actual title before crediting her in
+   an application.
 9. **Two Film Independent programs possibly missed:** daily-brief emails flagged **Project
    Involve 2027** (non-member deadline July 13, member deadline July 27 — both passed as of
    July 29, 2026, no application found in Drive) and **Fast Track** (a go/no-go decision
@@ -251,3 +259,29 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
     pool split across 6 filmmakers, not a guaranteed single award (standard grants run
     $4–8K research / $7–15K development). **Confirm with Richard before keeping this line**
     — as understood today it doesn't fit and the amount is overstated. docsout.org
+12. **Project title/name — open question, not decided (found 2026-10-13):** the Notion
+    Production Bible's page title now reads **"SAVE THE MARQUEE — Production Bible,"**
+    but every piece of body content (logline, project overview, funding tables) still
+    says **"50 Screens."** The Bible's own Sept 8 catch-up entry confirms this is a live,
+    tabled question: "Whether '50 Screens' still represents the project's full scope now
+    that focus has broadened twice (nonprofit/single-screen on Aug 15, Black/minority-owned
+    on Aug 29)... not urgent, but worth a deliberate conversation before it's load-bearing
+    on branding/deck work already starting." **Keep using "50 Screens" in applications
+    until the team actually decides** — don't adopt "Save the Marquee" from the page title
+    alone.
+13. **Two scope expansions, both decided by the team but not yet reflected in the sections
+    above (found 2026-10-13, sourced from the Bible's Sept 4/Sept 8 catch-up, itself
+    compiled from Sophia's Otter notes 7/18–8/15 and a pasted Aug 29 transcript):**
+    - **Aug 15 — broadened from for-profit-only to include nonprofit, single-screen, and
+      family-owned theaters.** Organizing idea is now "Main Street" cinema exhibitors
+      nationally. This **reverses the June 20 decision that ruled out nonprofits** —
+      Vidiots (Eagle Rock, CA), the theater-outreach skill's "ruled out" entry, **may be
+      back in play** and worth a deliberate second look (not yet re-screened as of this
+      writing).
+    - **Aug 29 — new strategic direction: focus specifically on Black-owned and
+      minority-owned family movie theaters, with Atlanta as the priority market** for
+      this angle. This is the basis for `discovery-sources.md`'s Black Public Media /
+      PitchBLACK and NBPC entries and the two matching "To Screen" rows in the Master
+      Grant & Submission Tracker.
+    Neither expansion has been folded into the "Topic summary," "Structure," or team
+    sections above yet — treat those as describing the pre-Aug-15 scope until updated.
