@@ -142,12 +142,16 @@ Closed captioning + hearing-impaired audio track; visually-impaired audio descri
 track.
 
 ## Work sample (current)
-Short documentary shot in five hours during a Theatrical Intimacy Education summer
-intensive (2023), written/directed/shot/edited by Jan-David Soutar — observational
-coverage of consent-based intimacy choreography on a student film set. Demonstrates the
-lean observational method and the ethical/consent framework 50 Screens requires.
-Vimeo: https://vimeo.com/847224059 (05:19). Additional: youtube.com/@mdlafilms.
-Submitted in lieu of 50 Screens production footage (principal photography begins 2026).
+**Being retired — do not keep using as of 2026-11-12.** The 2023 Theatrical Intimacy
+Education short (observational coverage of consent-based intimacy choreography,
+Vimeo: https://vimeo.com/847224059) was the work sample used in applications to date.
+On the From the Heart Productions call, Sheila's direct feedback was that it reads as a
+student exercise rather than evidence of JD's directing ability; JD and Richard agreed
+on the spot. **Decided replacement:** one short each from JD's and Richard's own
+produced/directed/written fiction work (not yet assembled — task logged in the
+Production Tasks DB). **Until that replacement exists, flag this to the user before
+submitting any new application** rather than defaulting to the old Vimeo link.
+Additional reel: youtube.com/@mdlafilms.
 
 ---
 
@@ -169,10 +173,15 @@ video + 8–15 news/trade clips, ~3–5 min; no sports footage). E&O budget line
   project budgets under $500K (e.g. **Roy W. Dean**). Ask before assuming which budget a
   given funder should see.
 
-**Fiscal sponsorship:** **Not yet secured.** Target sponsors: **IDA** or **The Film
-Collaborative (TFC)**. This is the gating dependency — most grants require it and it
-unlocks tax-deductible donations. (Note: **NEH does NOT require a nonprofit/fiscal
-sponsor** — flagged as a priority target for that reason.)
+**Fiscal sponsorship:** **Not yet secured** — still the gating dependency; most grants
+require it and it unlocks tax-deductible donations. (The June note below about IDA/TFC
+is superseded — see conflict item 7. Current sponsor: **From the Heart Productions**,
+flat fee **$80** confirmed directly on the Nov 12, 2026 call, plus 6% [check/wire] or
+8% [card/PayPal] transaction fees on donations received through them. **Next step:**
+finish the Delaware LLC paperwork, then request the sponsorship contract from
+info@fromtheheartproductions.com — JD and Richard agreed a lawyer should review it
+before signing. Note: **NEH does NOT require a nonprofit/fiscal sponsor** — flagged as
+a priority target for that reason.)
 
 **Festival targets (premiere priority order):** 1) Sundance (Jan 2028), 2) True/False
 (Mar 2028), 3) SXSW (Mar 2028), 4) Full Frame (Apr 2028). Secondary: PBS/Independent
@@ -259,16 +268,20 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
     pool split across 6 filmmakers, not a guaranteed single award (standard grants run
     $4–8K research / $7–15K development). **Confirm with Richard before keeping this line**
     — as understood today it doesn't fit and the amount is overstated. docsout.org
-12. **Project title/name — open question, not decided (found 2026-10-13):** the Notion
-    Production Bible's page title now reads **"SAVE THE MARQUEE — Production Bible,"**
-    but every piece of body content (logline, project overview, funding tables) still
-    says **"50 Screens."** The Bible's own Sept 8 catch-up entry confirms this is a live,
-    tabled question: "Whether '50 Screens' still represents the project's full scope now
-    that focus has broadened twice (nonprofit/single-screen on Aug 15, Black/minority-owned
-    on Aug 29)... not urgent, but worth a deliberate conversation before it's load-bearing
-    on branding/deck work already starting." **Keep using "50 Screens" in applications
-    until the team actually decides** — don't adopt "Save the Marquee" from the page title
-    alone.
+12. **Project title/name — "Save the Marquee" now confirmed in active use (updated
+    2026-11-12):** the Notion Production Bible's page title reads **"Save the Marquee —
+    Production Bible"**; as of 2026-10-13 that looked like just a page-title edit, with
+    body content still saying "50 Screens" throughout and the rename explicitly "tabled"
+    per the Bible's Sept 8 note. **That's no longer just a tabled question** — on the
+    Nov 12, 2026 call with From the Heart Productions, JD introduced the project to an
+    external party by its new name unprompted: "The title of the project was 50 Screens.
+    We've actually changed it to be a little bit clearer to call it Save the Marquee."
+    **Treat "Save the Marquee" as the current working title going forward.** What's NOT
+    yet done: a sweep of this repo's own files — `discovery-sources.md`, `opportunities.md`,
+    `SKILL.md`, `sources.md`, `theater-roster.md`, and this file's own body content below
+    all still say "50 Screens" throughout, and existing submitted applications obviously
+    still carry the old name. Ask the user before doing a full rename pass — it's a
+    large, visible change, not a one-line fix.
 13. **Two scope expansions, both decided by the team but not yet reflected in the sections
     above (found 2026-10-13, sourced from the Bible's Sept 4/Sept 8 catch-up, itself
     compiled from Sophia's Otter notes 7/18–8/15 and a pasted Aug 29 transcript):**
