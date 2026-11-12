@@ -1,4 +1,4 @@
-# 50 Screens — Opportunities: Eligibility Profile & Pipeline
+# Save the Marquee — Opportunities: Eligibility Profile & Pipeline
 
 Use this to (a) screen whether a funder fits and (b) know where to hunt for new labs/
 grants. **The authoritative, up-to-date status lives in the Master Grant & Submission

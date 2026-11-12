@@ -1,4 +1,4 @@
-# 50 Screens — Application Writing Playbook
+# Save the Marquee — Application Writing Playbook
 
 The house style, distilled from real reviewer feedback on the Film Independent Doc Lab
 application. **Run every draft through this before presenting it**, and use it to
@@ -10,7 +10,7 @@ critique existing drafts. Each rule has the failure it prevents.
    Phrases that describe *any* producer on *any* project are dead weight to a reviewer who
    reads hundreds of applications. Banned unless made concrete: "leave no stone unturned,"
    "work closely with the director to communicate their vision," "we are a safe set."
-   Replace with a specific fact, relationship, or detail only 50 Screens could claim.
+   Replace with a specific fact, relationship, or detail only Save the Marquee could claim.
 
 2. **Lead differentiation with embedded access, not nostalgia.**
    "We grew up watching movies in neighborhood theaters" is true of nearly every

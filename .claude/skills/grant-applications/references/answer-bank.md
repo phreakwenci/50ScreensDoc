@@ -1,4 +1,4 @@
-# 50 Screens — Answer Bank
+# Save the Marquee — Answer Bank
 
 Proven, voice-correct copy for the questions that recur across grant/lab portals. Most
 is lifted from the strongest **submitted** application (SFFilm Documentary Film Fund
@@ -17,7 +17,7 @@ people who refuse to let the American movie house die, and the communities that 
 need it.")
 
 ## Short film summary / synopsis
-At its core, 50 Screens is a national portrait told through local stories. Each theater
+At its core, Save the Marquee is a national portrait told through local stories. Each theater
 represents a different facet of the American experience: a single-screen cinema in a
 rural farming town struggling to stay open after the pandemic; a historic downtown
 theater fighting rising rents in a gentrifying city; a community-run nonprofit cinema
@@ -26,8 +26,8 @@ whether the next generation will continue the legacy. The film unfolds as a road
 — episodic yet cumulative — building toward an understanding of what is being lost and
 what is still worth saving. Rather than focusing solely on decline, it seeks the tension
 between crisis and reinvention. "Can independent theaters survive — and if so, what will
-they become?" The answer is not predetermined. 50 Screens invites the audience into the
-uncertainty.
+they become?" The answer is not predetermined. Save the Marquee invites the audience into
+the uncertainty.
 
 ## Filmmaker statement (Jan-David Soutar, first person)
 When I was nineteen, I was going through chemotherapy and got a job at a local mom-and-pop
@@ -43,7 +43,7 @@ sits at the intersection of narrative, documentary, and live experience, and I a
 thinking about the relationship between a film and the audience encountering it — work
 that invites participation rather than passive consumption.
 
-50 Screens is an evolution of that practice. It combines my interests in filmmaking,
+Save the Marquee is an evolution of that practice. It combines my interests in filmmaking,
 exhibition, and community building into a single project. For me, the making of the film
 and the future life of the film are deeply connected. Success as an artist is not fame;
 it is creating work that endures in the minds of audiences and strengthens the
@@ -72,7 +72,7 @@ Two proven angles — pick per applicant:
   inside: the daily economics of keeping a theater running, the relationships with
   distributors, the conversations in projection booths about what next year might bring. I
   was on the frontline when COVID-19 crippled the exhibition industry. That access and
-  credibility is something I bring to 50 Screens before we roll a single camera.
+  credibility is something I bring to Save the Marquee before we roll a single camera.
 
 ## Artistic vision / style
 The visual language is rooted in the observational tradition of cinéma vérité. The camera
@@ -181,12 +181,13 @@ use the tracking tab of the budget sheet (`sources.md`) and label each line **Se
 not list aspirational amounts that a funder's own program would never award at this stage.
 
 ## Ownership / creative control
-50 Screens is produced under MDLA Films and Nouveau Roadshow Pictures, both owned by
-Jan-David Soutar, who serves as director and holds full creative control over all
+Save the Marquee is produced under MDLA Films and Nouveau Roadshow Pictures, both owned
+by Jan-David Soutar, who serves as director and holds full creative control over all
 editorial, narrative, and artistic decisions. Richard Brown and Sophia Hernandez serve as
 producers. All rights, including distribution, are held by Soutar through Nouveau
 Roadshow Pictures. *(Entity note: confirm whether the filing name is "Nouveau Roadshow
-Pictures" or "50 Screens LLC" — see conflict note in `project-facts.md`.)*
+Pictures" or "50 Screens LLC" — see conflict note in `project-facts.md`. The LLC name
+itself hasn't been confirmed as renamed, unlike the project's creative title.)*
 
 ## Accessibility
 The film will include closed captioning and a hearing-impaired audio track for D/deaf and
@@ -194,14 +195,20 @@ hard-of-hearing audiences, and a visually-impaired audio-description track for b
 low-vision audiences.
 
 ## Work-sample description
+**Being retired — see `project-facts.md`.** On the Nov 12, 2026 From the Heart
+Productions call, the team decided to stop using this sample (direct feedback: it reads
+as a student exercise, not evidence of directing ability). Replacement is JD's and
+Richard's own fiction-short reels, not yet assembled. Flag this to the user before
+reusing the copy below in a new application.
+
 The sample is a short documentary produced in five hours during a 2023 Theatrical
 Intimacy Education intensive — written, directed, shot, and edited by Jan-David Soutar —
 following an intimacy coordinator, two actors, and crew through consent-based
-choreography for a vulnerable scene. It is relevant to 50 Screens twice over: it
+choreography for a vulnerable scene. It is relevant to Save the Marquee twice over: it
 demonstrates the observational method (small crew, natural light, subjects carrying the
 material without directorial intervention), and its subject — consent and care on set —
-mirrors the ethical framework 50 Screens requires when documenting owners discussing
-financial vulnerability and the possibility of failure. Submitted in lieu of 50 Screens
+mirrors the ethical framework Save the Marquee requires when documenting owners
+discussing financial vulnerability and the possibility of failure. Submitted in lieu of
 production footage, which begins in 2026. Vimeo: https://vimeo.com/847224059.
 
 ## Team bios

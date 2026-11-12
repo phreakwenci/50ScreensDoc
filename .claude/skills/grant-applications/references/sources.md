@@ -1,4 +1,4 @@
-# 50 Screens — Source-of-Truth Index
+# Save the Marquee — Source-of-Truth Index
 
 Live locations the skill reads from and writes to. Prefer these authenticated MCP tools
 over web fetches (the docs are private). Confirm before any write.
@@ -49,7 +49,7 @@ the Google Drive MCP (`read_file_content`, `search_files`).
 > and Richard's Drives hold pieces of the pipeline.
 
 ## Master Grant & Submission Tracker (pipeline source of truth)
-**[50 Screens — Master Grant & Submission Tracker](https://docs.google.com/spreadsheets/d/1gmk6h0UmzxHsICvIAt7OIXQU1i58fgPD9AhWWpS3xmE/edit)**
+**[Save the Marquee — Master Grant & Submission Tracker](https://docs.google.com/spreadsheets/d/1gmk6h0UmzxHsICvIAt7OIXQU1i58fgPD9AhWWpS3xmE/edit)**
 (`1gmk6h0UmzxHsICvIAt7OIXQU1i58fgPD9AhWWpS3xmE`) — built 2026-10-12, this is now **the**
 pipeline source of truth. It replaces the old budget sheet's tracking tab and this file's
 own "Live pipeline" table (see `opportunities.md`) as the single place to check or update
@@ -68,7 +68,10 @@ grant/lab/crowdfunding status.
   as the old budget-sheet tracker). Read the google-workspace skill's `sheets.md` first —
   formulas must stay formulas, never typed-over results.
 
-## Notion — 50 Screens Production Bible
+## Notion — Save the Marquee Production Bible
+(Notion page titled "Save the Marquee — Production Bible" as of Nov 2026; still titled
+with the old name internally in places — e.g. the Meeting Notes and Tasks database
+titles below still say "50 Screens," unchanged by the team so far.)
 Read/query with the Notion MCP (`notion-fetch`, `notion-search`, `notion-query-data-sources`).
 The Bible holds meeting notes, funding strategy, budget summary, theater subjects, and
 key relationships — the freshest project state.
@@ -87,13 +90,13 @@ See the conflict list in `project-facts.md`.
 ## Gmail
 - **Connected inbox:** `mdlafilms@gmail.com` (Jan-David) — searchable via the Gmail MCP
   for funder correspondence, deadlines, confirmations.
-- **Dedicated project inbox:** the team referenced a separate 50 Screens / Nouveau
+- **Dedicated project inbox:** the team referenced a separate Save the Marquee / Nouveau
   Roadshow email. **If it is not the connected account above, it must be connected
   separately** before the skill can search it — ask the user for the address and to add
   the connector. Until then, use `mdlafilms@gmail.com` and anything the user pastes.
 
 ## Airtable
-No dedicated 50 Screens grants base exists (closest: a generic "Indie Film Production"
+No dedicated Save the Marquee grants base exists (closest: a generic "Indie Film Production"
 base). The pipeline tracker is the **Master Grant & Submission Tracker Google Sheet**
 above, not Airtable — do not create an Airtable tracker unless the user asks.
 

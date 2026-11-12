@@ -1,4 +1,4 @@
-# 50 Screens — Crowdfunding Campaign Brief
+# Save the Marquee — Crowdfunding Campaign Brief
 
 Current plan, from the Notion Production Bible meeting notes (May–June 2026). Update this
 file (with confirmation) as decisions change; it's the campaign's source of truth for
@@ -32,7 +32,7 @@ goals, hook, perks, and roles.
   the film has momentum, materials, and ideally WIP footage. Sequenced after Seed & Spark.
 
 ## Pre-launch checklist (build the base first)
-- [ ] Social accounts live and posting: 50 Screens Instagram, Facebook, TikTok.
+- [ ] Social accounts live and posting: Instagram, Facebook, TikTok (handle @50screensdoc).
 - [ ] Teaser artwork uploaded to shared Drive.
 - [ ] Email list growing; segment ready for launch-day push.
 - [ ] Pitch video shot and cut (owner interviews secured via outreach).

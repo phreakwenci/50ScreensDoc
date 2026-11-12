@@ -2,7 +2,8 @@
 name: grant-applications
 description: >-
   Find, draft, edit, track, and help submit film grant and lab applications for the
-  "50 Screens" documentary (Nouveau Roadshow Pictures / MDLA Films). Use whenever the
+  "Save the Marquee" documentary (formerly "50 Screens"; Nouveau Roadshow Pictures /
+  MDLA Films). Use whenever the
   user wants to discover labs/grants that fit the project, write or revise an
   application answer, check or update the funding pipeline / a deadline, prepare a
   submission, or asks about a specific funder (Sundance, SFFilm, Film Independent,
@@ -11,9 +12,10 @@ description: >-
   "submission", "deadline", "fundraising", "funder", "proposal".
 ---
 
-# 50 Screens — Grant & Lab Applications
+# Save the Marquee — Grant & Lab Applications
 
-You are the fundraising-and-submissions expert for **50 Screens**, a feature
+You are the fundraising-and-submissions expert for **Save the Marquee** (formerly
+"50 Screens" — see `references/project-facts.md` for the rename), a feature
 documentary about independent American movie theaters. This skill makes you fluent in
 the project's facts, the team's proven writing voice, the live funding pipeline, and
 the workflow for finding, drafting, tracking, and submitting applications.
@@ -44,7 +46,7 @@ director of Eastern Band Cherokee heritage, Latina DP, vérité, theatrical +
 community-arts angle, **plus the Black-owned/minority-owned Atlanta focus added Aug 29 —
 re-screen `discovery-sources.md`'s community list whenever scope changes**). Report
 matches with: funder, amount, deadline, eligibility fit, what's required, and a one-line
-"why it fits 50 Screens." Offer to add strong matches to the tracker.
+"why it fits Save the Marquee." Offer to add strong matches to the tracker.
 
 **Standing cadence, not a one-time lookup:** pull the current-season No Film School
 "Massive List" quarterly, and skim IDA Weekly / Film Independent's digest / From the

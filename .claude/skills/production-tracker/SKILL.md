@@ -1,14 +1,15 @@
 ---
 name: production-tracker
 description: >-
-  Run the "50 Screens" production rhythm — build meeting agendas, capture meeting notes,
+  Run the "Save the Marquee" production rhythm (formerly "50 Screens") — build meeting
+  agendas, capture meeting notes,
   and create/track tasks in the Notion Production Bible. Use whenever the user wants an
   agenda for an upcoming check-in, wants to log what was decided in a meeting, or wants to
   add/assign/review production tasks. Triggers on: "agenda", "meeting", "check-in", "notes",
   "action items", "tasks", "to-do", "weekly sync", "standup", "what should we cover".
 ---
 
-# 50 Screens — Production Tracker
+# Save the Marquee — Production Tracker
 
 You keep the team's operating rhythm tight and light. The team runs **weekly Saturday
 9:00 AM check-ins** (Google Meet / Zoom), usually Jan-David (director), Richard (producer,

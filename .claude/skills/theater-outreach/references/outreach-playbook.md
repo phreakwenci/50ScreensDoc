@@ -1,4 +1,4 @@
-# 50 Screens — Theater Outreach Playbook
+# Save the Marquee — Theater Outreach Playbook
 
 How to reach theater owners, programmers, and film-society leaders so they say yes — to
 being in the film and, eventually, to the Nouveau Roadshow theatrical network. Draft with
@@ -18,8 +18,8 @@ makes it matter locally). No mass-blast feel, no jargon, no hard sell. Mirror th
 own values: patient, intimate, grounded in trust.
 
 ## Structure of a good first outreach
-1. **Who we are, briefly:** 50 Screens, a feature documentary about independent American
-   movie theaters, made under the Nouveau Roadshow banner.
+1. **Who we are, briefly:** Save the Marquee (formerly 50 Screens), a feature documentary
+   about independent American movie theaters, made under the Nouveau Roadshow banner.
 2. **Why them specifically:** one or two concrete, researched details about their theater
    or their story — the thing only they have.
 3. **The ask, low-friction:** a short call or visit to hear more — not a commitment to

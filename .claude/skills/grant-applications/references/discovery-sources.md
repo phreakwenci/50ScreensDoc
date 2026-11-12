@@ -1,4 +1,4 @@
-# 50 Screens — Grant Discovery Infrastructure
+# Save the Marquee — Grant Discovery Infrastructure
 
 This is the "how to hunt well" layer — durable, reusable knowledge about *where opportunities
 live*, separate from `opportunities.md` (which is the project's own pipeline/tracker). Everything

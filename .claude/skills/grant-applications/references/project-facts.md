@@ -1,4 +1,4 @@
-# 50 Screens — Canonical Project Facts
+# Save the Marquee — Canonical Project Facts
 
 This is the single source of truth for facts about the film. **Never invent or alter
 these when drafting applications.** If a funder needs something not here, ask the user.
@@ -9,7 +9,10 @@ items 8 and 11–13 were pulled directly from the Bible on 2026-10-13** (its Sep
 catch-up entries); everything else above predates that pull and may itself be stale.
 
 ## One-liner / identity
-- **Title:** 50 Screens
+- **Title:** Save the Marquee (formerly "50 Screens" — confirmed renamed, see conflict
+  item 12. Old name still appears throughout external files: the "50 Screens Budget"
+  Google Sheet, "50 Screens LLC" if that's the real filing name, the Notion Meeting
+  Notes/Tasks database titles, and the @50screensdoc social handle.)
 - **Format:** Feature documentary, ~90 minutes
 - **Country of production:** United States
 - **Genre/mode:** Observational / cinéma vérité
@@ -45,7 +48,7 @@ business facing succession. Structured as a road journey — episodic yet cumula
 Seeks the tension between crisis and reinvention, not just decline.
 
 > "Can independent theaters survive — and if so, what will they become?" The answer is
-> not predetermined. 50 Screens invites the audience into the uncertainty.
+> not predetermined. Save the Marquee invites the audience into the uncertainty.
 
 ## Central question (the film's spine)
 Not *whether* independent theaters will survive (some will, some won't) but **what
@@ -264,7 +267,7 @@ theme material), Meeting Notes DB, Production Tasks DB. See `sources.md` for IDs
     appeared in Richard's AXS Film Grant draft funding table at $50,000 "to apply." Real
     org, but their current funds are the **Coexistence Documentary Fund** (human-animal
     relationships) and the **Automation & Humanity Documentary Fund** (AI/autonomous
-    systems) — neither matches 50 Screens. The $50K figure is also a pitch-competition
+    systems) — neither matches Save the Marquee. The $50K figure is also a pitch-competition
     pool split across 6 filmmakers, not a guaranteed single award (standard grants run
     $4–8K research / $7–15K development). **Confirm with Richard before keeping this line**
     — as understood today it doesn't fit and the amount is overstated. docsout.org

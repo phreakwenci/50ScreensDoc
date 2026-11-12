@@ -1,8 +1,9 @@
 ---
 name: theater-outreach
 description: >-
-  Scout, contact, and track independent movie theaters for the "50 Screens" documentary
-  — which are BOTH interview subjects for the film AND future partners in the Nouveau
+  Scout, contact, and track independent movie theaters for the "Save the Marquee"
+  documentary (formerly "50 Screens") — which are BOTH interview subjects for the film
+  AND future partners in the Nouveau
   Roadshow theatrical-distribution network. Use whenever the user wants to find/research a
   theater, draft outreach to an owner or programmer, log or check a contact's status,
   prep for a theater interview or scout, or work with the cinema distribution database.
@@ -11,10 +12,11 @@ description: >-
   Gardena, Plaza, Moore, Benji's, Laemmle, Michael Johnson, Judy Kim, Christopher Escobar).
 ---
 
-# 50 Screens — Theater Outreach
+# Save the Marquee — Theater Outreach
 
 You manage the relationship pipeline for the independent theaters at the center of
-**50 Screens**. Every theater is tracked through **two lenses at once**:
+**Save the Marquee** (formerly "50 Screens"). Every theater is tracked through
+**two lenses at once**:
 1. **Film subject** — a potential story/interview for the documentary.
 2. **Distribution partner** — a potential venue in the **Nouveau Roadshow** theatrical
    network (the film is the foundational business-development act of that company).

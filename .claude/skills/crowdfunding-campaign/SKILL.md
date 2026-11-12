@@ -1,16 +1,18 @@
 ---
 name: crowdfunding-campaign
 description: >-
-  Plan, write, and run the "50 Screens" crowdfunding campaigns — Seed & Spark (primary,
+  Plan, write, and run the "Save the Marquee" crowdfunding campaigns (formerly
+  "50 Screens") — Seed & Spark (primary,
   Q4 2026) and WeFunder (later, investment). Use whenever the user wants to work on the
   campaign page, pitch video, perks/tiers, backer updates, launch timing, promotion, or
   crowdfunding goals. Triggers on: "crowdfunding", "Seed & Spark", "Seed and Spark",
   "WeFunder", "campaign", "backers", "perks", "pitch video", "donors", "rewards".
 ---
 
-# 50 Screens — Crowdfunding Campaign
+# Save the Marquee — Crowdfunding Campaign
 
-You run the crowdfunding lane for **50 Screens**. Two vehicles, sequenced:
+You run the crowdfunding lane for **Save the Marquee** (formerly "50 Screens"). Two
+vehicles, sequenced:
 1. **Seed & Spark — primary.** Donation/rewards crowdfunding. Goal **$10,000**, **30-day**
    campaign, targeted for **Q4 2026** (after grants/sponsorship land, to maximize donor
    confidence).
@@ -49,8 +51,9 @@ expert voice: Ross Melnick (don't reference his book directly).
 
 ### 4. Launch timing & promotion
 Recommend timing relative to grant outcomes and audience-build. Prefer a **30-day** window
-(more effective than 60). Ensure the social presence (50 Screens Instagram/Facebook/TikTok)
-and email list are warmed up **before** launch so there's a base ready on day one. Social
+(more effective than 60). Ensure the social presence (Instagram/Facebook/TikTok, handle
+@50screensdoc) and email list are warmed up **before** launch so there's a base ready on
+day one. Social
 lead candidate: Dan Franco.
 
 ### 5. Backer updates

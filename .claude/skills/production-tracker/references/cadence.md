@@ -1,4 +1,4 @@
-# 50 Screens — Production Cadence & Templates
+# Save the Marquee — Production Cadence & Templates
 
 ## Meeting rhythm
 - **Weekly Saturday check-in, 9:00 AM** (Google Meet or Zoom), ~30–90 min.
@@ -52,7 +52,8 @@ As of the Bible's June 2026 notes — confirm what's changed:
   Gardena (CA, confirm nonprofit), Plaza/Escobar (GA), Moore Theatres (MI).
 - **Crowdfunding:** Seed & Spark ($10K, 30-day, Q4 2026, American Dream / US-250 hook) —
   page + perks in progress (Sophia). Producer credits not offered (PGA).
-- **Admin:** Delaware LLC (JD/Richard forming; "50 Screens LLC"), BluVine business bank once
+- **Admin:** Delaware LLC (JD/Richard forming; "50 Screens LLC" — entity name unconfirmed,
+  see project-facts.md), BluVine business bank once
   formed, E&O insurance quote (~$3,500 line).
 - **Monitor:** Richard's full-time (government) job may be cut July 2026 — watch capacity.
 
